@@ -1,0 +1,54 @@
+﻿@model CSI2132.Models.Room
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Room</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Amenities)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Amenities)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Capacity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Capacity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.View)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.View)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Extendible)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Extendible)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Damages)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Damages)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
